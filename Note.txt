@@ -1,0 +1,27 @@
+Core concept of Express
+
+1. Router
+2. Middleware
+3. Views
+
+
+
+Middleware
+
+In the context of web development, a middleware is software that acts as an intermediary 
+between a client and a server, or between different components of an application. It intercepts 
+requests and responses, allowing you to perform various tasks such as authentication, logging, 
+data transformation, error handling, and more.
+
+Middleware sits between the client and the server in the request-response cycle. When a request 
+is made to the server, it passes through one or more middleware functions before reaching the intended 
+route handler. Similarly, when a response is sent back from the server to the client, it can pass through 
+middleware again before being returned to the client.
+
+Middleware functions typically have access to the request object, the response object, and a next 
+function that allows them to pass control to the next middleware function in the chain. This allows
+you to modify the request or response, perform some actions, and then either continue processing the
+request or short-circuit the chain and send a response back to the client.
+
+
+## App.use make use of a middleware
